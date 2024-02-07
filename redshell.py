@@ -977,6 +977,7 @@ class RedShell(Cmd):
 
             if ttps:
                 # log command with TTPs to team server
+                self.cs_process.sendline(f'x blog({self.cs_beacon_id}, "{cs_log_command} {ttps}")')
                 self.cs_process.sendline(f'x btask({self.cs_beacon_id}, "{cs_log_command}", "{ttps}")')
                 self.cs_process.expect('.*aggressor.*> ')
 
