@@ -1,0 +1,4 @@
+cs_host=127.0.0.1
+cs_port=50050
+cs_user=rs
+cs_directory=/home/azureuser/cobaltstrike
